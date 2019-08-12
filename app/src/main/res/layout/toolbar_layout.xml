@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        app:popupTheme="@style/AlertDialog.AppCompat.Light"
+        android:id="@+id/toolBar"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hello Dinesh..."
+                android:textSize="16dp"
+                android:gravity="center"
+                android:id="@+id/searchText"
+                android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="440dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp">
+        <android.support.v7.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:inputType="text"
+            android:queryHint="Search minimart products"
+            android:layout_gravity="left"
+            android:id="@+id/txtSearch"
+            android:background="@drawable/textbox"
+            android:layout_weight="10"
+            />
+        <!--<Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/btnSearch"
+            android:background="@drawable/ic_barcodereader"
+            />-->
+        <!--<Button-->
+            <!--android:id="@+id/scan_button"-->
+            <!--android:layout_width="10dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_weight="10"-->
+            <!--android:text="@string/scan"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:background="@drawable/button"-->
+            <!--android:layout_gravity="right"/>-->
+    </LinearLayout>
+</android.support.design.widget.AppBarLayout>
+    

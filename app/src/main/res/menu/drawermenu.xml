@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/myAddress" android:title="My Address" android:icon="@drawable/ic_changeadddress"/>
+    <item android:id="@+id/changePassword" android:title="Change Password" android:icon="@drawable/ic_changepassword"/>
+    <item android:id="@+id/myOrder" android:title="My Order" android:icon="@drawable/ic_order"/>
+    <item android:id="@+id/mtSetting" android:title="My Setting" android:icon="@drawable/ic_settings"/>
+    <item android:id="@+id/myWallet" android:title="My Wallet" android:icon="@drawable/ic_wallet"/>
+    <item android:id="@+id/logout" android:title="LogOut" android:icon="@drawable/ic_logout"/>
+</menu>
