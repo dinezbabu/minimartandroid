@@ -15,10 +15,12 @@
         app:itemTextColor="@color/colorGrayDark"
         app:itemIconTint="@color/colorGrayDark"
         app:menu="@menu/drawermenu"
-        app:headerLayout="@layout/header_layout"
+        app:headerLayout="@layout/header_drawer_layout"
         android:layout_gravity="start">
     </android.support.design.widget.NavigationView>
-
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,6 +31,7 @@
             android:layout_height="148dp"
             android:src="@drawable/ic_home_banner"/>
         <Button
+            android:visibility="gone"
             android:id="@+id/scan_button"
             android:layout_width="65dp"
             android:layout_height="35dp"
@@ -54,7 +57,41 @@
             android:layout_width="120dp"
             android:layout_height="300dp"
             android:src="@drawable/ic_water_25ltr"/>-->
-    </LinearLayout>
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Category List"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical"
+            tools:context="com.minimart.groceries.MainActivity"
+            >
 
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/colorWhite"
+        app:itemTextColor="@color/colorWhite"
+        app:menu="@menu/bottom_menu">
+    </android.support.design.widget.BottomNavigationView>
+    </RelativeLayout>
     </android.support.v4.widget.DrawerLayout>
 
