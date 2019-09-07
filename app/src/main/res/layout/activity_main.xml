@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.minimart.groceries.MainActivity"
+    tools:context="com.minimart.groceries.HomeActivity"
     android:orientation="vertical">
 
     <android.support.design.widget.NavigationView
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <include layout="@layout/toolbar_layout"/>
+        <include layout="@layout/toolbar_home"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="148dp"
@@ -71,9 +71,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:isScrollContainer="false"
-            android:nestedScrollingEnabled="false"
             android:orientation="vertical"
-            tools:context="com.minimart.groceries.MainActivity"
+            tools:context="com.minimart.groceries.HomeActivity"
             >
 
         </android.support.v7.widget.RecyclerView>
@@ -90,6 +89,7 @@
         app:itemBackground="@color/colorPrimary"
         app:itemIconTint="@color/colorWhite"
         app:itemTextColor="@color/colorWhite"
+        android:id="@+id/bottom_navigation"
         app:menu="@menu/bottom_menu">
     </android.support.design.widget.BottomNavigationView>
     </RelativeLayout>

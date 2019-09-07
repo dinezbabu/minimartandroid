@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmOrderActivity"
+    app:cardCornerRadius="4dp">
+
+    <include layout="@layout/toolbar_arrow" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar 1kg"
+        android:textSize= "25dp"
+        android:textAlignment="center"
+        android:id="@+id/product_name"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dec"
+            android:id="@+id/product_dec"
+            android:layout_toEndOf="@id/product_name"/>
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:text="1"
+            android:textAlignment="center"
+            android:id="@+id/product_qty"
+            android:layout_toEndOf="@id/product_dec"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inc"
+            android:id="@+id/product_inc"
+            android:layout_toEndOf="@id/product_qty"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_price"
+        android:layout_toEndOf="@id/product_inc"
+        android:textSize= "25dp"
+        android:textAlignment="center"
+        android:text="24"/>
+    </RelativeLayout>
+    <include layout="@layout/floating_checkout_bag" />
+</android.support.v7.widget.CardView>

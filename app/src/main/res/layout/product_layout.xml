@@ -2,48 +2,96 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@drawable/ic_water_25ltr"/>
+    android:id="@+id/product"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:id="@+id/product_thumbnail"
+    android:background="@drawable/nandhini_blue"
+    android:layout_gravity="center"
+    android:scaleType="centerCrop"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/product_name"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="Milk - Blue Shubham from Nandhini"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/product_weighted"
+        android:text="500ml"/>
     <LinearLayout
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="Fruits"/>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/product_MRP"
+            android:textStyle="bold"
+            android:textColor="@color/colorRed"
+            android:text="₹25"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="Apple"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="1kg"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="MRP : 250"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="MM : 220"/>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="2dp"
+            android:id="@+id/product_MM"
+            android:textStyle="bold"
+            android:text=" ₹22"/>
     </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/product_promotionoffer"
+        android:textColor="@color/colorRed"
+        android:textStyle="italic"
+        android:text="Buy1Get1"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/productvaraintspinner"
+        android:layout_gravity="center">
+    </Spinner>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:orientation="vertical">
-        <Button
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:text="ADD"
-            android:layout_marginTop="90dp"
-            android:layout_marginLeft="90dp"
-            android:gravity="bottom"
-            />
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:id="@+id/btn_subscribe"
+                android:text="SUBSCRIBE"
+                android:gravity="center"
+                android:textColor="@color/colorBlue"
+                android:background="@drawable/blue_button"
+                />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:text="ADD"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/button"
+                />
+        </RelativeLayout>
     </LinearLayout>
-
+</LinearLayout>
 </LinearLayout>
